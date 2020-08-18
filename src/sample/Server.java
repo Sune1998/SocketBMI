@@ -40,7 +40,7 @@ public class Server extends Application {
 
                     double area = radius * radius * Math.PI;
 
-                    outputToClient.writeDouble(area);
+                    outputStream.writeDouble(area);
 
                     Platform.runLater(() -> {
                         textArea.appendText("Radius recevid from client:" + radius + '\n');
